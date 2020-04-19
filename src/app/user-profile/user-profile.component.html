@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="alert alert-success text-center mt-3" role="alert">
+                <h6 class="text-bold">Password Changed Successfully!</h6>
+                <input name="btnRPLogin" class="btn btn-md btn-primary" value="Login"  [routerLink]="['/lpage']" 
+                    type="submit">
+              </div>
+            <h3>Change Password?</h3>
+            <form id="resetPwdForm" role="form" #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate autocomplete="off" class="form">
+                <label>Current Password</label>
+                <div class="form-group pass_show"> 
+                    <input type="password" value="" class="form-control" placeholder="Current Password"> 
+                </div> 
+                <label>New Password</label>
+                <div class="form-group pass_show">
+                    <input type="password" value="" class="form-control" placeholder="New Password" />
+                </div>
+                <label>Confirm Password</label>
+                <div class="form-group pass_show">
+                    <input type="password" value="" class="form-control" placeholder="Confirm Password" />
+                </div>
+
+                <div class="form-group">
+                    <input name="btnResetPwd" class="btn btn-md btn-primary btn-block btnForget" value="Update Password"
+                    type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
